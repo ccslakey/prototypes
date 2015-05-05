@@ -1,15 +1,15 @@
 function DiceCons(numSides){
 	this.numSides = numSides;
 	this.roll = function(){
-		var myNum = Math.round((Math.random()*(numSides-1))+1);
+		var myNum = Math.floor((Math.random()*(numSides))+1);
 		console.log("Your roll was ", myNum);
 	}};
     
 
     function Starship(model, owner){
-	this.owner = owner
-	this.model = model
-	this.speed = 0
+	this.owner = owner;
+	this.model = model;
+	this.speed = 0;
 	this.topSped;
  } 
 	Starship.prototype.setTopSpeed = function(topSpeed){
