@@ -10,7 +10,6 @@ function DiceCons(numSides){
 	this.owner = owner;
 	this.model = model;
 	this.speed = 0;
-	this.topSped;
  } 
 	Starship.prototype.setTopSpeed = function(topSpeed){
 		this.topSped = topSpeed;
